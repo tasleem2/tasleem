@@ -1,0 +1,17 @@
+plugins {
+    kotlin("jvm") version "1.5.21"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web:2.5.4")
+}
+
+tasks.register("customTask") {
+    doLast {
+        println("This is a custom task")
+    }
+}
